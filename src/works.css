@@ -1,0 +1,392 @@
+.works {
+  max-width: 1400px;
+  margin: auto;
+  padding: 120px 48px;
+  position: relative;
+  z-index: 1
+}
+
+.works-intro {
+  display: grid;
+  grid-template-columns: 1.2fr .8fr;
+  gap: 35px;
+  align-items: end;
+  margin-bottom: 72px
+}
+
+.works-intro .eyebrow {
+  grid-column: 1/-1
+}
+
+.works h2 {
+  font-size: clamp(55px, 7vw, 104px);
+  letter-spacing: -.09em;
+  line-height: .82;
+  margin: 0
+}
+
+.works h2 em {
+  color: #f35432;
+  font-style: normal
+}
+
+.works-intro>p:last-child {
+  color: #acaeba;
+  line-height: 1.75;
+  max-width: 340px
+}
+
+.work-list {
+  display: grid;
+  gap: 28px
+}
+
+.work-card {
+  display: grid;
+  grid-template-columns: 250px minmax(0, 1fr) 265px;
+  gap: 25px;
+  padding: 30px;
+  background: linear-gradient(120deg, #0f101a, #111322);
+  border: 1px solid #ffffff1f;
+  transition: .35s
+}
+
+.work-card:hover {
+  border-color: #d7ff625a;
+  transform: translateY(-3px)
+}
+
+.work-card header {
+  border-right: 1px solid #ffffff19;
+  padding-right: 20px
+}
+
+.work-card header span {
+  font: 600 13px 'DM Mono', monospace;
+  color: #f35432
+}
+
+.work-card header b {
+  font: 500 10px 'DM Mono', monospace;
+  color: #d7ff62;
+  margin-left: 12px;
+  letter-spacing: .09em
+}
+
+.work-card h3 {
+  font-size: 26px;
+  line-height: 1.08;
+  letter-spacing: -.065em;
+  margin: 45px 0 0
+}
+
+.proof-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1px;
+  background: #ffffff18;
+  border: 1px solid #ffffff18
+}
+
+.stage {
+  background: #0b0c16;
+  padding: 17px;
+  min-height: 110px
+}
+
+.stage small {
+  font: 500 9px 'DM Mono', monospace;
+  letter-spacing: .09em;
+  color: #8d8fa1
+}
+
+.stage p {
+  margin: 13px 0 0;
+  color: #d1d2dd;
+  font-size: 12px;
+  line-height: 1.55
+}
+
+.hot-stage {
+  background: #192217
+}
+
+.hot-stage small {
+  color: #d7ff62
+}
+
+.reflection {
+  grid-column: 1/-1;
+  background: #15111e;
+  border-left: 2px solid #f35432
+}
+
+.visual {
+  min-height: 230px;
+  position: relative;
+  overflow: hidden;
+  background: #070912;
+  border: 1px solid #ffffff1c;
+  padding: 20px
+}
+
+.visual-top {
+  position: absolute;
+  top: 12px;
+  left: 14px;
+  display: flex;
+  gap: 5px
+}
+
+.visual-top i {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: #f35432
+}
+
+.visual-top i:nth-child(2) {
+  background: #d7ff62
+}
+
+.visual-top i:nth-child(3) {
+  background: #64c7ff
+}
+
+.visual b {
+  position: absolute;
+  bottom: 16px;
+  left: 19px;
+  font: 600 10px 'DM Mono', monospace;
+  letter-spacing: .08em;
+  color: #e5e5ef
+}
+
+.mini-car {
+  position: absolute;
+  top: 64px;
+  left: 34px;
+  width: 192px;
+  height: 86px;
+  border-radius: 50% 50% 20% 20%;
+  background: linear-gradient(150deg, #ff6846, #40122c 70%);
+  transform: rotate(-6deg);
+  box-shadow: 0 22px 25px #0009
+}
+
+.mini-car:after {
+  content: "";
+  position: absolute;
+  left: 48px;
+  top: 13px;
+  width: 96px;
+  height: 30px;
+  border-radius: 50% 50% 12px 12px;
+  background: #172e4d;
+  border: 1px solid #ffc0a9
+}
+
+.mini-car:before {
+  content: "";
+  position: absolute;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: #0a0a0e;
+  border: 3px solid #fd6544;
+  left: 17px;
+  bottom: -14px;
+  box-shadow: 124px 0 #0a0a0e, 124px 0 0 3px #fd6544
+}
+
+.visual-graph svg {
+  position: absolute;
+  left: 18px;
+  top: 68px;
+  width: 225px
+}
+
+.visual-graph path {
+  fill: none;
+  stroke: #64c7ff;
+  stroke-width: 4
+}
+
+.visual-graph:before {
+  content: "";
+  position: absolute;
+  left: 22px;
+  right: 18px;
+  top: 72px;
+  bottom: 55px;
+  background: linear-gradient(#ffffff14 1px, transparent 1px), linear-gradient(90deg, #ffffff14 1px, transparent 1px);
+  background-size: 35px 25px
+}
+
+.node {
+  position: absolute;
+  border: 1px solid #d7ff62;
+  border-radius: 5px;
+  padding: 8px;
+  color: #d7ff62;
+  font: 500 9px 'DM Mono', monospace
+}
+
+.node.a {
+  left: 102px;
+  top: 61px
+}
+
+.node.b {
+  left: 23px;
+  top: 143px
+}
+
+.node.c {
+  right: 19px;
+  top: 145px
+}
+
+.edge {
+  position: absolute;
+  height: 1px;
+  background: #d7ff62;
+  transform-origin: left
+}
+
+.e1 {
+  left: 58px;
+  top: 154px;
+  width: 63px;
+  transform: rotate(-45deg)
+}
+
+.e2 {
+  left: 140px;
+  top: 89px;
+  width: 70px;
+  transform: rotate(49deg)
+}
+
+.paper-title {
+  top: 57px !important;
+  font-size: 14px !important
+}
+
+.formula {
+  position: absolute;
+  top: 105px;
+  left: 20px;
+  font: italic 22px Georgia;
+  color: #e4e3e9
+}
+
+.paper-lines {
+  position: absolute;
+  left: 20px;
+  right: 20px;
+  top: 153px;
+  height: 45px;
+  background: repeating-linear-gradient(transparent 0 10px, #ffffff28 11px 12px)
+}
+
+.slide-thumb {
+  position: absolute;
+  width: 80px;
+  height: 95px;
+  background: linear-gradient(145deg, #1f243b, #080a12);
+  border: 1px solid #ffffff33
+}
+
+.slide-thumb.one {
+  left: 22px;
+  top: 58px;
+  transform: rotate(-8deg)
+}
+
+.slide-thumb.two {
+  left: 85px;
+  top: 43px;
+  transform: rotate(3deg);
+  border-color: #f35432
+}
+
+.slide-thumb.three {
+  left: 153px;
+  top: 65px;
+  transform: rotate(12deg)
+}
+.slide-thumb.four {
+  left: 30px;
+  top: 143px;
+  transform: rotate(-8deg)
+}
+.slide-thumb.five {
+  left: 153px;
+  top: 143px;
+  transform: rotate(12deg)
+}
+
+.mini-browser {
+  position: absolute;
+  top: 56px;
+  left: 20px;
+  right: 20px;
+  height: 130px;
+  background: #121628;
+  border: 1px solid #ffffff23;
+  padding: 14px
+}
+
+.mini-browser span {
+  font: 600 8px 'DM Mono', monospace;
+  color: #d7ff62
+}
+
+.mini-browser strong {
+  display: block;
+  font-size: 24px;
+  line-height: .9;
+  letter-spacing: -.08em;
+  margin-top: 22px
+}
+
+.mini-browser:after {
+  content: "";
+  position: absolute;
+  right: 13px;
+  bottom: 14px;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  border: 10px solid #f35432;
+  box-shadow: inset 0 0 0 8px #321756
+}
+
+@media(max-width:900px) {
+  .works {
+    padding: 90px 20px
+  }
+
+  .works-intro {
+    grid-template-columns: 1fr
+  }
+
+  .work-card {
+    grid-template-columns: 1fr
+  }
+
+  .work-card header {
+    border-right: 0;
+    border-bottom: 1px solid #ffffff19;
+    padding: 0 0 20px
+  }
+
+  .work-card h3 {
+    margin: 20px 0 0
+  }
+
+  .visual {
+    min-height: 210px
+  }
+}

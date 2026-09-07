@@ -1,0 +1,2 @@
+.car-photo{position:absolute;z-index:2;left:5%;top:16%;width:90%;filter:drop-shadow(0 32px 28px #0009) saturate(1.05);transform:perspective(800px) rotateY(-4deg) rotateZ(-3deg);mix-blend-mode:screen}
+@media(max-width:760px){.car-photo{left:7%;top:21%;width:88%}}

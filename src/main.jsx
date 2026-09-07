@@ -246,6 +246,7 @@ function Car() {
 }
 
 function App() {
+  console.log("aaaaaaa");
   const root = useRef(null);
   const [idea, setIdea] = useState("");
   const [answer, setAnswer] = useState("");

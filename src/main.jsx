@@ -137,7 +137,7 @@ function Visual({ type }) {
         <>
           <div className="slide-thumb one">
             <img
-              src="/assets/McLaren_Active_Aerodynamics_-_Slide_1.png"
+              src={`${import.meta.env.BASE_URL}assets/McLaren_Active_Aerodynamics_-_Slide_1.png`}
               height="100%"
               alt="สไลด์ 1"
               className="!h-full"
@@ -145,7 +145,7 @@ function Visual({ type }) {
           </div>
           <div className="slide-thumb two">
             <img
-              src="/assets/McLaren_Active_Aerodynamics_-_Slide_2.png"
+              src={`${import.meta.env.BASE_URL}assets/McLaren_Active_Aerodynamics_-_Slide_2.png`}
               height="100%"
               alt="สไลด์ 1"
               className="!h-full"
@@ -153,7 +153,7 @@ function Visual({ type }) {
           </div>
           <div className="slide-thumb three">
             <img
-              src="/assets/McLaren_Active_Aerodynamics_-_Slide_3.png"
+              src={`${import.meta.env.BASE_URL}assets/McLaren_Active_Aerodynamics_-_Slide_3.png`}
               height="100%"
               alt="สไลด์ 1"
               className="!h-full"
@@ -161,7 +161,7 @@ function Visual({ type }) {
           </div>
           <div className="slide-thumb four">
             <img
-              src="/assets/McLaren_Active_Aerodynamics_-_Slide_4.png"
+              src={`${import.meta.env.BASE_URL}assets/McLaren_Active_Aerodynamics_-_Slide_4.png`}
               height="100%"
               alt="สไลด์ 1"
               className="!h-full"
@@ -169,7 +169,7 @@ function Visual({ type }) {
           </div>
           <div className="slide-thumb five">
             <img
-              src="/assets/McLaren_Active_Aerodynamics_-_Slide_5.png"
+              src={`${import.meta.env.BASE_URL}assets/McLaren_Active_Aerodynamics_-_Slide_5.png`}
               height="100%"
               alt="สไลด์ 1"
               className="!h-full"
@@ -238,7 +238,7 @@ function Car() {
       <div className="car-glow" />
       <img
         className="car-photo"
-        src="/assets/mclaren-720s-vector.jpg"
+        src={`${import.meta.env.BASE_URL}assets/mclaren-720s-vector.jpg`}
         alt="รถสปอร์ต McLaren 720S สีส้ม"
       />
     </div>
